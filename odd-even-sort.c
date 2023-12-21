@@ -40,6 +40,10 @@ void compareSplit(int nlocal, int *elmnts, int *relmnts, int *wspace, int keepsm
     }
 }
 
+int compare(const void *e1, const void *e2) {
+    return (*((int *)e1) - *((int *)e2));
+}
+
 int main(int argc, char *argv[]) {
     int n, npes, myrank, nlocal, evenrank, oddrank, i;
     int *elmnts, *relmnts, *wspace;
@@ -100,8 +104,4 @@ int main(int argc, char *argv[]) {
     MPI_Finalize();
 
     return 0;
-}
-
-int compare(const void *e1, const void *e2) {
-    return (*((int *)e1) - *((int *)e2));
 }
