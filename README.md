@@ -66,5 +66,5 @@ This will run the program with 4 MPI processes, sorting an array of 1000 element
 Feel free to modify the program or instructions based on your specific requirements and environment.
 
 ```bash 
-Made with 💖 by Saad
+Made with 💖 by Saad and Wasif
 ```
